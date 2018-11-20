@@ -14,6 +14,7 @@ $('button').click(function(event){
   $("#play_you").text(play_you)
   var play_machine= computer_move();
   compare(play_you, play_machine);
+  score (verdict);
 });
 
 /*Randomise value for what the computer would do */
@@ -42,11 +43,10 @@ function compare(you, machine){
     verdict = 'win';
   }
   $("#verdict").text(verdict);
-  played++;
-  $("#game_played").text(played)
-}
+  return(verdict);
+  }
 
-function score() {
+function score(verdict) {
   switch(verdict){
   case 'win':
   won++;
@@ -61,7 +61,11 @@ function score() {
   case 'draw':
   draw++;
   $("#game_draw").text(draw);
-  break;}
+  break;
+}
+
+played++;
+$("#game_played").text(played);
 }
 
 
