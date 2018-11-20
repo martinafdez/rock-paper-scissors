@@ -44,6 +44,7 @@ function compare(you, machine){
   $("#verdict").text(verdict);
   played++;
   $("#game_played").text(played)
+}
 
 function score() {
   switch(verdict){
@@ -60,8 +61,7 @@ function score() {
   case 'draw':
   draw++;
   $("#game_draw").text(draw);
-  break;
-}
+  break;}
 }
 
 
