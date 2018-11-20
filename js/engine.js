@@ -48,47 +48,41 @@ function computer_move(){
 /*function for comparing you and computer*/
 
 function compare(you, machine){
-
   var verdict = 'lose';
   if ( you == machine ) {
     verdict = 'draw';
   }
-
   if ((you=="rock") && (machine == "scissors")){
     verdict='win';
   }
-
   if ((you=="paper") && (machine == "rock")){
     verdict = 'win';
   }
-
   if ((you=="scissors") && (machine == "paper")){
     verdict = 'win';
   }
-
   if (verdict == 'win') {
     won++;
     $("#game_won").text(won);
   }
-
   if (verdict == 'lose') {
     lost++;
     $("#game_lost").text(lost);
   }
-
   if (verdict == 'draw') {
     draw++;
     $("#game_draw").text(draw);
   }
-
-
   $("#verdict").text(verdict);
   played++;
   $("#game_played").text(played)
 }
 
+/*score function*/
 
-function score(switch(verdict)) {
+function score() {
+
+  switch(verdict){
   case 'win':
   won++;
   $("#won").text(won);
@@ -103,4 +97,5 @@ function score(switch(verdict)) {
   draw++;
   $("#draw").text(draw);
   break;
+}
 }
