@@ -11,9 +11,18 @@
 
 #buttons {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #rpsimage {
   text-align: center;
   margin-bottom: 20px;
+}
+
+#move {
+  text-align: center;
+}
+
+#score {
+  text-align: center;
 }
