@@ -3,31 +3,110 @@
 }
 
 .jumbotron {
-  text-align: center;
-  color: Brown;
-  font-family: arial;
-  border-style: double;
-  background-color: RosyBrown;
-  border-color: Brown;
-
+  background-image: url('../images/rps.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  padding-top: 100px;
+  min-height: 500px;
+  border-style: solid;
+  border-color: DarkRed;
+   background-position: center center;
 }
 
-
-
-#buttons {
+.jumbotron h1 {
+  font-weight: bold;
+  font-size: 700%;
   text-align: center;
-  margin-bottom: 50px;
+  color: SteelBlue;
+  font-family: georgia;
 }
 
-#rpsimage {
-  text-align: center;
-  margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 300%
+  }
+}
+
+#footer-things {
+  border-style: solid;
+  border-color: DarkRed;
+}
+
+p {
+  color: DarkRed;
+  font-family: georgia;
+}
+
+h2 {
+  color: SteelBlue;
+  font-weight: bold;
+  font-family: georgia;
+  text-decoration: underline;
+}
+
+h3 {
+  color: SteelBlue;
+  font-weight: bold;
+  font-family: georgia;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
 }
 
 #move {
   text-align: center;
+  padding-top: 50px;
+}
+
+#move p {
+  font-size: 20px;
+}
+
+#score p {
+  font-size: 20px;
 }
 
 #score {
   text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+
+  height: 200px;
+  width: 200px;
+  border: 10px solid DarkRed;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: RosyBrown;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+#footer-things {
+  background: RosyBrown;
+  padding-top: 30px;
+  margin-top: 20px;
 }

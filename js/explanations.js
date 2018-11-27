@@ -63,6 +63,9 @@ function compare(you, machine) {
   /* We're done in this function and return to the button click function. The value of verdict is returned to assign to the verdict variable in the button click function. */
   return verdict;
 }
+
+
+
 /* This function will update the score values in the HTML. It receives the value of the verdict variable so we can use that to update all the possible tallies. */
 function score(verdict) {
   /* The switch statement is like an if statement, but easier to read. It's used when you want to check the value of a single variable against possible options. You give the switch statement the variable you want to check. */
